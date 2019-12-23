@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Registration from './Routes/Registration/Registration'
+import {Route,Switch} from 'react-router-dom'
+import Home from './Routes/Home/Home'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Surprise Motherfucker! It`s Beka ! nemsky
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Route path="/"  component ={Home}/>
     </div>
   );
 }
