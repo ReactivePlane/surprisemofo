@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom'
 
 
-const app = (<BrowserRouter>
-                <App/>
-            </BrowserRouter>)
+ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById("root")
+  );
+  
 
-ReactDOM.render(app, document.getElementById('root'));
-
-serviceWorker.unregister();
+  serviceWorker.unregister();
